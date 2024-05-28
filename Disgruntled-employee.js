@@ -37,3 +37,27 @@ function off(n) {
 }
 
 // or
+
+function off(n) {
+  // Setting all switches to off (true)
+  let switches = Array();
+  for (let i = 1; i<n+1; i++){
+      switches[i] = true;
+  }
+  
+  // Flip every ith switch
+  for (let i = 2; i <= n; i++){
+      for (let j = i; j <=n; j+=i){
+          switches[j] = !switches[j];    
+      }
+  }
+  
+  // Find all switches off
+  let off_switches = Array();
+  for (let i in switches){
+      if (switches[i]){
+           off_switches.push(+i);
+      }
+  }
+  return off_switches;
+}
