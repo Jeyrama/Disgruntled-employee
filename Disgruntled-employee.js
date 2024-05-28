@@ -26,3 +26,12 @@ Example: (Input --> Output)
 
 
 // Solution
+
+function off(n) {
+  let count=1,arr=[];
+  for(let i=1;i<=n;i+=count){
+    arr.push(i);
+    count+=2;
+  }
+  return arr;
+}
