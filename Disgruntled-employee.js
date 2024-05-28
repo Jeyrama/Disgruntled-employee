@@ -23,3 +23,6 @@ Example: (Input --> Output)
   4 --> [1, 4]
   The parameter n will always be a number >= 1.
 */
+
+
+// Solution
